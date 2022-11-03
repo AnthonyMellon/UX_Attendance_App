@@ -1,13 +1,15 @@
 <script>
-  import svelteLogo from './assets/svelte.svg'
-  import StudentItem from './lib/studentItem.svelte';
   import StreamList from './lib/StreamList.svelte';
+  import DoLaterButton from './lib/DoLaterButton.svelte';
+  import SaveButton from './lib/SaveButton.svelte';
+  import Header from './lib/Header.svelte';
+
 </script>
 
 <main>
+  <Header />
   <StreamList />
 </main>
 
 <style>
-
 </style>
