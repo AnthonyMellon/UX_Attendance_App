@@ -62,4 +62,6 @@ let studentList = [
             ['S', 'L']
         ]
     }
-]
+];
+
+export const students = writable(studentList);
