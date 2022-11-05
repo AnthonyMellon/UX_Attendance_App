@@ -53,7 +53,7 @@
                             {reset()}                             
                             {#each student.Attendance[0] as mark}                                                                                                                                 
                                 {`Class ${incriment()}`} 
-                                <select name ="marks" id ="marks" bind:value={student.Attendance[0][0]}>
+                                <select name ="marks" id ="marks" bind:value={student.Attendance[3][0]}>
                                     <option disabled selected value="U">Unmarked</option>
                                     <option value="O">Online</option>
                                     <option value="A">Absent</option>
