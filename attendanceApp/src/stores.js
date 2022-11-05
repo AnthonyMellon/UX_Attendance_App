@@ -19,7 +19,7 @@ let studentList = [
         studentID: 1000000000,
         firstName: 'Student',
         lastName: 'McStudent',
-        PreferredStream: '0',
+        PreferredStream: 'A',
         Attendance: [
             ['U', 'U'],
             ['U', 'U'],
@@ -31,7 +31,7 @@ let studentList = [
         studentID: 1000000001,
         firstName: 'Good',
         lastName: 'AStudent',
-        PreferredStream: '0',
+        PreferredStream: 'A',
         Attendance: [
             ['P', 'P'],
             ['P', 'P'],
@@ -43,7 +43,7 @@ let studentList = [
         studentID: 1000000002,
         firstName: 'Bad',
         lastName: 'BStudent',
-        PreferredStream: '0',
+        PreferredStream: 'A',
         Attendance: [
             ['A', 'A'],
             ['L', 'A'],
@@ -55,7 +55,7 @@ let studentList = [
         studentID: 1000000003,
         firstName: 'Sick',
         lastName: 'CStudent',
-        PreferredStream: '0',
+        PreferredStream: 'A',
         Attendance: [
             ['S', 'S'],
             ['O', 'P'],
