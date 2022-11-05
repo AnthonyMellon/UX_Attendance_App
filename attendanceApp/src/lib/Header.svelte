@@ -4,12 +4,21 @@
     import SaveButton from "./SaveButton.svelte";
 
     export let currentStream;
+    export let className;
+    export let currentWeek;
+    export let currentClass;
 </script>
 
 <header>
-    <h1>    
-        Stream {currentStream}
-    </h1>
+    <section>
+        <h1>    
+            {className}: Stream {currentStream} 
+        </h1>
+        <h2>
+            Week {currentWeek}, Class {currentClass}
+        </h2>
+    </section>
+
     <section aria-label="Buttons" class="Buttons">
         <DoLaterButton />
         <SaveButton />
@@ -33,6 +42,7 @@
     }
 
     h1 {
-
+        margin-left: 1vw;
     }
+
 </style>

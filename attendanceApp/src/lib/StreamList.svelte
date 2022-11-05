@@ -8,11 +8,13 @@
     let reset = () => {i = 0; console.log(i); return ""};
     let incriment = () => {i++; console.log(i); return i;}
 
-    let currentClass = 0;
+
     let selectedMark;
 
     export let currentStream;
     export let listStream;
+    export let currentClass;
+
 
     if(currentStream === listStream) open = true; //Default to only show students for current classes stream
 
@@ -49,22 +51,17 @@
                         <td>{student.firstName}</td>
                         <td>{student.lastName}</td>
                         <td>{student.studentID}</td>
-                        <td class="AttendanceQuickView">
-                            {reset()}                             
-                            {#each student.Attendance[0] as mark}                                                                                                                                 
-                                {`Class ${incriment()}`} 
-                                <select name ="marks" id ="marks" bind:value={student.Attendance[3][0]}>
-                                    <option disabled selected value="U">Unmarked</option>
-                                    <option value="O">Online</option>
-                                    <option value="A">Absent</option>
-                                    <option value="N">Not Required</option>
-                                    <option value="L">Late</option>
-                                    <option value="P">Present</option>
-                                    <option value="E">Exaplined</option>
-                                    <option value="S">Sick</option>                                    
-                                </select>  
-                                                                                                                 
-                            {/each}
+                        <td class="AttendanceQuickView">                            
+                            <select name ="marks" id ="marks" bind:value={student.Attendance[3][currentClass]}>
+                                <option disabled selected value="U">Unmarked</option>
+                                <option value="O">Online</option>
+                                <option value="A">Absent</option>
+                                <option value="N">Not Required</option>
+                                <option value="L">Late</option>
+                                <option value="P">Present</option>
+                                <option value="E">Exaplined</option>
+                                <option value="S">Sick</option>                                    
+                            </select>  
                         </td>
                     </tr>
                     {/if} 
@@ -81,7 +78,7 @@
     .StudentList {
         background-color: rgb(192, 213, 219);
         text-align: left;
-        width: 50vw;
+        width: 25vw;
         border: black;
         border-style: solid;
         border-width: 1px;
