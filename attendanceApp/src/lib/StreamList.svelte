@@ -10,6 +10,8 @@
 
     let currentClass = 0;
 
+    export let stream;
+
 </script>
 
 <section class="StudentList">
@@ -23,7 +25,7 @@
             {/if}
             </button>
             <h2 class="HeaderItem">
-               Stream A 
+               Stream {stream} 
             </h2>
     </header>
     {#if open}
@@ -69,17 +71,19 @@
 
 <style>
     .StudentList {
-        background-color: lightblue;
+        background-color: rgb(192, 213, 219);
         text-align: left;
-        width: 25vw;
+        width: 50vw;
     }
     table {
-        border-spacing: 20px 5px;
+        border-spacing: 20px 5px;        
     }
 
     header {
         display: flex;
         flex-direction: row;
+        background-color: rgb(104, 116, 121);
+        color: white;
     }
 
     .HeaderItem{

@@ -3,6 +3,10 @@
 </button>
 
 <style>
+    :root {
+        margin: 0px;
+    }
+
     button {
         background-color: greenyellow;
     }
