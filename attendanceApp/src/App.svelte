@@ -7,7 +7,7 @@
   const CURRENT_STREAM = 'A'
   const CURRENT_CLASS = 0
   const CLASS_NAME = 'My Cool Class'
-  const CURRENT_WEEK = 1;
+  const CURRENT_WEEK = 2;
 
 </script>
 

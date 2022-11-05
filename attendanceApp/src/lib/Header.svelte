@@ -21,7 +21,7 @@
 
     <section aria-label="Buttons" class="Buttons">
         <DoLaterButton />
-        <SaveButton />
+        <SaveButton currentStream = {currentStream} currentClass = {currentClass} currentWeek = {currentWeek} />
     </section>
 
 </header>
