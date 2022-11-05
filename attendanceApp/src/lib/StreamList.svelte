@@ -1,9 +1,15 @@
 
 <script>
-    import { each } from "svelte/internal";
+    import { each, loop_guard } from "svelte/internal";
     import { currentStudent, students } from "../stores";
 
     let open = true;
+    let i;
+    let reset = () => {i = 0; console.log(i); return ""};
+    let incriment = () => {i++; console.log(i); return i;}
+
+    let currentClass = 0;
+
 </script>
 
 <section class="StudentList">
@@ -36,7 +42,21 @@
                         <td>{student.firstName}</td>
                         <td>{student.lastName}</td>
                         <td>{student.lastName}</td>
-                        <td class="AttendanceQuickView">{student.Attendance[0]}</td>
+                        <td class="AttendanceQuickView">
+                            {reset()}                             
+                            {#each student.Attendance[0] as mark}                                                                 
+                                {`Class ${incriment()}`} 
+                                <select name ="marks" id ="marks">
+                                    <option value="O">Online</option>
+                                    <option value="A">Absent</option>
+                                    <option value="N">Not Required</option>
+                                    <option value="L">Late</option>
+                                    <option value="P">Present</option>
+                                    <option value="E">Exaplined</option>
+                                    <option value="S">Sick</option>                                    
+                                </select>                                                                                    
+                            {/each}
+                        </td>
                     </tr>
                 {/each}
             </tbody>
@@ -64,5 +84,10 @@
 
     .HeaderItem{
         margin-right: 25%;
+    }
+
+    .AttendanceQuickView{
+        display: flex;
+        flex-direction: row;
     }
 </style>

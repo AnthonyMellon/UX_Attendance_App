@@ -9,6 +9,7 @@ Attendace Codes:
  P - present
  E - explained
  S - sick
+ U - Unmarked
 */
 
 export const currentStudent = writable();
@@ -20,10 +21,10 @@ let studentList = [
         lastName: 'McStudent',
         PreferredStream: '0',
         Attendance: [
-            ['P', 'L'],
-            ['S', 'N'],
-            ['O', 'E'],
-            ['P', 'P']
+            ['U', 'U'],
+            ['U', 'U'],
+            ['U', 'U'],
+            ['U', 'U']
         ]
     },
     {
