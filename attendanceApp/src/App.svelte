@@ -4,12 +4,14 @@
   import SaveButton from './lib/SaveButton.svelte';
   import Header from './lib/Header.svelte';
 
+  const CURRENT_STREAM = 'A'
+
 </script>
 
 <main>
-  <Header />
-  <StreamList currentStream = {'A'} listStream={'A'} />
-  <StreamList currentStream = {'A'} listStream={'B'} />
+  <Header currentStream = {CURRENT_STREAM} />
+  <StreamList currentStream = {CURRENT_STREAM} listStream={'A'} />
+  <StreamList currentStream = {CURRENT_STREAM} listStream={'B'} />
 </main>
 
 <style>
