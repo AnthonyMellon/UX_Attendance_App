@@ -7,25 +7,32 @@
 
     let AttemptSave = () => {
         let success = true;
+        let unmarkedStudents = [];
 
         $students.forEach(student => {
             if(student.PreferredStream === currentStream) { //Only need to check if students in current stream are marked off
                 if(student.Attendance[currentWeek][currentClass] === 'U') { //If student is unmarked for this class
-                    success = false;                 
+                    success = false;     
+                    unmarkedStudents.push(student);            
                 }
             }
         });
         
         if(success) SaveSuccess();
-        else saveFail(); 
+        else saveFail(unmarkedStudents); 
     }
 
     let SaveSuccess = () => {
         alert("Roll saved and submitted!")
     }
 
-    let saveFail = (message) => {
-        alert(`Failed to submit roll, ensure you've marked everyone in stream ${currentStream}`)
+    let saveFail = (unmarkedStudents) => {
+        let unmarkedList = "";
+        unmarkedStudents.forEach(student => {
+            unmarkedList += `${student.firstName} (${student.studentID})\n`
+        });
+
+        alert(`Failed to submit roll, ensure you've marked everyone in stream ${currentStream}\n${unmarkedList}Are unmarked`)
     }   
 </script>
 
