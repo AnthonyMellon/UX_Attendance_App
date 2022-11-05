@@ -62,6 +62,54 @@ let studentList = [
             ['O', 'S'],
             ['S', 'L']
         ]
+    },
+    {
+        studentID: 1000000004,
+        firstName: 'Random',
+        lastName: 'Student',
+        PreferredStream: 'B',
+        Attendance: [
+            ['U', 'U'],
+            ['U', 'U'],
+            ['U', 'U'],
+            ['U', 'U']
+        ]
+    },
+    {
+        studentID: 1000000005,
+        firstName: 'Stream',
+        lastName: 'Ber',
+        PreferredStream: 'B',
+        Attendance: [
+            ['P', 'P'],
+            ['P', 'P'],
+            ['P', 'P'],
+            ['P', 'P']
+        ]
+    },
+    {
+        studentID: 1000000006,
+        firstName: 'Another',
+        lastName: 'Student',
+        PreferredStream: 'B',
+        Attendance: [
+            ['A', 'A'],
+            ['L', 'A'],
+            ['P', 'A'],
+            ['A', 'L']
+        ]
+    },
+    {
+        studentID: 1000000007,
+        firstName: 'Last',
+        lastName: 'One',
+        PreferredStream: 'B',
+        Attendance: [
+            ['S', 'S'],
+            ['O', 'P'],
+            ['O', 'S'],
+            ['S', 'L']
+        ]
     }
 ];
 

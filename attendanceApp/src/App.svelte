@@ -8,8 +8,8 @@
 
 <main>
   <Header />
-  <StreamList stream={'A'} />
-  <StreamList stream={'B'} />
+  <StreamList currentStream = {'A'} listStream={'A'} />
+  <StreamList currentStream = {'A'} listStream={'B'} />
 </main>
 
 <style>
