@@ -43,7 +43,7 @@
                     <tr>
                         <td>{student.firstName}</td>
                         <td>{student.lastName}</td>
-                        <td>{student.lastName}</td>
+                        <td>{student.studentID}</td>
                         <td class="AttendanceQuickView">
                             {reset()}                             
                             {#each student.Attendance[0] as mark}                                                                 
