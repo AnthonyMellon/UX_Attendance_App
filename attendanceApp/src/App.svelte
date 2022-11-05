@@ -13,8 +13,8 @@
 
 <main>
   <Header currentStream = {CURRENT_STREAM} className = {CLASS_NAME} currentWeek = {CURRENT_WEEK} currentClass = {CURRENT_CLASS} />
-  <StreamList currentStream = {CURRENT_STREAM} listStream={'A'} currentClass = {CURRENT_CLASS} />
-  <StreamList currentStream = {CURRENT_STREAM} listStream={'B'} currentClass = {CURRENT_CLASS} />
+  <StreamList currentStream = {CURRENT_STREAM} listStream={'A'} currentClass = {CURRENT_CLASS} currentWeek = {CURRENT_WEEK} />
+  <StreamList currentStream = {CURRENT_STREAM} listStream={'B'} currentClass = {CURRENT_CLASS} currentWeek = {CURRENT_WEEK} />
 </main>
 
 <style>

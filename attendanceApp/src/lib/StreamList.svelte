@@ -14,6 +14,7 @@
     export let currentStream;
     export let listStream;
     export let currentClass;
+    export let currentWeek;
 
 
     if(currentStream === listStream) open = true; //Default to only show students for current classes stream
@@ -52,7 +53,7 @@
                         <td>{student.lastName}</td>
                         <td>{student.studentID}</td>
                         <td class="AttendanceQuickView">                            
-                            <select name ="marks" id ="marks" bind:value={student.Attendance[3][currentClass]}>
+                            <select name ="marks" id ="marks" bind:value={student.Attendance[currentWeek][currentClass]}>
                                 <option disabled selected value="U">Unmarked</option>
                                 <option value="O">Online</option>
                                 <option value="A">Absent</option>
