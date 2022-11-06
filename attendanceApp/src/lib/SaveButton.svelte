@@ -23,7 +23,7 @@
     }
 
     let SaveSuccess = () => {
-        alert("Roll saved and submitted!")
+        alert("Roll submitted!")
     }
 
     let saveFail = (unmarkedStudents) => {
@@ -37,7 +37,7 @@
 </script>
 
 <button on:click={() => {AttemptSave()}}>
-    Save
+    Submit
 </button>
 
 <style>
