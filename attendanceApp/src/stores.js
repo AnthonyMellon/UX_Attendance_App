@@ -110,6 +110,18 @@ let studentList = [
             ['O', 'S'],
             ['U', 'U']
         ]
+    },
+    {
+        studentID: 1000000008,
+        firstName: 'Last One',
+        lastName: 'For Real This Time',
+        PreferredStream: 'B',
+        Attendance: [
+            ['S', 'S'],
+            ['O', 'P'],
+            ['O', 'S'],
+            ['U', 'U']
+        ]
     }
 ];
 
